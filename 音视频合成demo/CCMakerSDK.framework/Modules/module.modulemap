@@ -1,0 +1,6 @@
+framework module CCMakerSDK {
+  umbrella header "CCMakerSDK.h"
+
+  export *
+  module * { export * }
+}
