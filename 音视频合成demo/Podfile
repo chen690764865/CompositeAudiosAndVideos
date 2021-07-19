@@ -7,5 +7,5 @@ target '音视频合成Demo' do
 
   # Pods for 音视频合成Demo
   pod 'FLEX', '~>2.0'
-
+  pod 'libextobjc'
 end

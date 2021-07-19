@@ -17,6 +17,7 @@
 		C442C184264A24C00060A027 /* CCSRTFileLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C442C183264A24C00060A027 /* CCSRTFileLoader.m */; };
 		C442C187264A58D20060A027 /* 五环之歌.srt in Resources */ = {isa = PBXBuildFile; fileRef = C442C186264A58D20060A027 /* 五环之歌.srt */; };
 		C442CCA5264D45730060A027 /* 五环之歌.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C442CCA4264D45730060A027 /* 五环之歌.mp4 */; };
+		C451C3C4267067BD00C65637 /* HMKAVCompositeTool+WatermarkAndSRT.m in Sources */ = {isa = PBXBuildFile; fileRef = C451C3C3267067BD00C65637 /* HMKAVCompositeTool+WatermarkAndSRT.m */; };
 		C4669D522623EB34002DCE22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4669D512623EB34002DCE22 /* AppDelegate.m */; };
 		C4669D552623EB34002DCE22 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4669D542623EB34002DCE22 /* SceneDelegate.m */; };
 		C4669D582623EB34002DCE22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4669D572623EB34002DCE22 /* ViewController.m */; };
@@ -30,6 +31,11 @@
 		C4669D8026242027002DCE22 /* video03.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4669D7C26242027002DCE22 /* video03.mp4 */; };
 		C4669D8126242027002DCE22 /* abctime_start.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4669D7D26242027002DCE22 /* abctime_start.mp4 */; };
 		C4669D8426242132002DCE22 /* CCMakerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4669D8326242132002DCE22 /* CCMakerSDK.framework */; };
+		C472D2EF2670644F00B97FD9 /* HMKAVCompositeTool+Audio.m in Sources */ = {isa = PBXBuildFile; fileRef = C472D2EE2670644F00B97FD9 /* HMKAVCompositeTool+Audio.m */; };
+		C472D2F22670645C00B97FD9 /* HMKAVCompositeTool+Video.m in Sources */ = {isa = PBXBuildFile; fileRef = C472D2F12670645C00B97FD9 /* HMKAVCompositeTool+Video.m */; };
+		C4B5BD3B265F8D2B00091BE1 /* test_video_a.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4B5BD39265F8D2B00091BE1 /* test_video_a.mp4 */; };
+		C4B5BD3C265F8D2B00091BE1 /* start.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C4B5BD3A265F8D2B00091BE1 /* start.mp4 */; };
+		C4B5BD6C2664D20900091BE1 /* HMKAVCompositeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C4B5BD6B2664D20900091BE1 /* HMKAVCompositeTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +53,8 @@
 		C442C183264A24C00060A027 /* CCSRTFileLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCSRTFileLoader.m; sourceTree = "<group>"; };
 		C442C186264A58D20060A027 /* 五环之歌.srt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "五环之歌.srt"; sourceTree = "<group>"; };
 		C442CCA4264D45730060A027 /* 五环之歌.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "五环之歌.mp4"; sourceTree = "<group>"; };
+		C451C3C2267067BD00C65637 /* HMKAVCompositeTool+WatermarkAndSRT.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMKAVCompositeTool+WatermarkAndSRT.h"; sourceTree = "<group>"; };
+		C451C3C3267067BD00C65637 /* HMKAVCompositeTool+WatermarkAndSRT.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HMKAVCompositeTool+WatermarkAndSRT.m"; sourceTree = "<group>"; };
 		C4669D4D2623EB34002DCE22 /* 音视频合成Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "音视频合成Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4669D502623EB34002DCE22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C4669D512623EB34002DCE22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -66,6 +74,14 @@
 		C4669D7C26242027002DCE22 /* video03.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video03.mp4; sourceTree = "<group>"; };
 		C4669D7D26242027002DCE22 /* abctime_start.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abctime_start.mp4; sourceTree = "<group>"; };
 		C4669D8326242132002DCE22 /* CCMakerSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CCMakerSDK.framework; sourceTree = "<group>"; };
+		C472D2ED2670644F00B97FD9 /* HMKAVCompositeTool+Audio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMKAVCompositeTool+Audio.h"; sourceTree = "<group>"; };
+		C472D2EE2670644F00B97FD9 /* HMKAVCompositeTool+Audio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HMKAVCompositeTool+Audio.m"; sourceTree = "<group>"; };
+		C472D2F02670645C00B97FD9 /* HMKAVCompositeTool+Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HMKAVCompositeTool+Video.h"; sourceTree = "<group>"; };
+		C472D2F12670645C00B97FD9 /* HMKAVCompositeTool+Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HMKAVCompositeTool+Video.m"; sourceTree = "<group>"; };
+		C4B5BD39265F8D2B00091BE1 /* test_video_a.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_video_a.mp4; sourceTree = "<group>"; };
+		C4B5BD3A265F8D2B00091BE1 /* start.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = start.mp4; sourceTree = "<group>"; };
+		C4B5BD6A2664D20900091BE1 /* HMKAVCompositeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HMKAVCompositeTool.h; sourceTree = "<group>"; };
+		C4B5BD6B2664D20900091BE1 /* HMKAVCompositeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HMKAVCompositeTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +136,14 @@
 				C4669D572623EB34002DCE22 /* ViewController.m */,
 				C4669D6F2623EDE6002DCE22 /* CCAVCompositeTool.h */,
 				C4669D702623EDE6002DCE22 /* CCAVCompositeTool.m */,
+				C4B5BD6A2664D20900091BE1 /* HMKAVCompositeTool.h */,
+				C4B5BD6B2664D20900091BE1 /* HMKAVCompositeTool.m */,
+				C472D2ED2670644F00B97FD9 /* HMKAVCompositeTool+Audio.h */,
+				C472D2EE2670644F00B97FD9 /* HMKAVCompositeTool+Audio.m */,
+				C451C3C2267067BD00C65637 /* HMKAVCompositeTool+WatermarkAndSRT.h */,
+				C451C3C3267067BD00C65637 /* HMKAVCompositeTool+WatermarkAndSRT.m */,
+				C472D2F02670645C00B97FD9 /* HMKAVCompositeTool+Video.h */,
+				C472D2F12670645C00B97FD9 /* HMKAVCompositeTool+Video.m */,
 				C411A2A226438E900056750C /* CCAVPlayer.h */,
 				C411A2A326438E900056750C /* CCAVPlayer.m */,
 				C442C182264A24C00060A027 /* CCSRTFileLoader.h */,
@@ -136,6 +160,8 @@
 		C4669D7926242027002DCE22 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				C4B5BD3A265F8D2B00091BE1 /* start.mp4 */,
+				C4B5BD39265F8D2B00091BE1 /* test_video_a.mp4 */,
 				C442CCA4264D45730060A027 /* 五环之歌.mp4 */,
 				C43A769C263B9F86003BFAD2 /* MiracastVideo.mp4 */,
 				C43A7697263AE2D3003BFAD2 /* IMG_8209.mp4 */,
@@ -223,12 +249,14 @@
 				C43A760C263A8599003BFAD2 /* raz_map_home_bgm.mp3 in Resources */,
 				C43A7698263AE2D3003BFAD2 /* IMG_8210.mp4 in Resources */,
 				C43A769A263AE2D3003BFAD2 /* IMG_8209.mp4 in Resources */,
+				C4B5BD3C265F8D2B00091BE1 /* start.mp4 in Resources */,
 				C4669D5D2623EB37002DCE22 /* Assets.xcassets in Resources */,
 				C4669D8026242027002DCE22 /* video03.mp4 in Resources */,
 				C43A769D263B9F86003BFAD2 /* MiracastVideo.mp4 in Resources */,
 				C4669D7E26242027002DCE22 /* myPlayer.mp4 in Resources */,
 				C442C187264A58D20060A027 /* 五环之歌.srt in Resources */,
 				C4669D8126242027002DCE22 /* abctime_start.mp4 in Resources */,
+				C4B5BD3B265F8D2B00091BE1 /* test_video_a.mp4 in Resources */,
 				C4669D5B2623EB34002DCE22 /* Main.storyboard in Resources */,
 				C4669D7F26242027002DCE22 /* 五环之歌.mp3 in Resources */,
 			);
@@ -266,13 +294,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C472D2EF2670644F00B97FD9 /* HMKAVCompositeTool+Audio.m in Sources */,
 				C4669D582623EB34002DCE22 /* ViewController.m in Sources */,
 				C411A2A426438E900056750C /* CCAVPlayer.m in Sources */,
 				C4669D522623EB34002DCE22 /* AppDelegate.m in Sources */,
 				C4669D632623EB37002DCE22 /* main.m in Sources */,
 				C4669D552623EB34002DCE22 /* SceneDelegate.m in Sources */,
+				C451C3C4267067BD00C65637 /* HMKAVCompositeTool+WatermarkAndSRT.m in Sources */,
 				C442C184264A24C00060A027 /* CCSRTFileLoader.m in Sources */,
+				C472D2F22670645C00B97FD9 /* HMKAVCompositeTool+Video.m in Sources */,
 				C4669D712623EDE6002DCE22 /* CCAVCompositeTool.m in Sources */,
+				C4B5BD6C2664D20900091BE1 /* HMKAVCompositeTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,13 +454,15 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "音视频合成Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Summer.-----Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = Summer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,13 +475,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9UBCZYG45F;
+				DEVELOPMENT_TEAM = 9778PF5R9L;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				INFOPLIST_FILE = "音视频合成Demo/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

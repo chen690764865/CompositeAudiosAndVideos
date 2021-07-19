@@ -371,17 +371,28 @@
     AVAssetTrack *videoAssetTrack = [[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
     // 获取音频轨道
     AVAssetTrack *audioAssetTrack = [[videoAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0];
-    CMTimeRange timeRange = videoAssetTrack.timeRange;
+    CMTimeRange timeRange = CMTimeRangeMake(kCMTimeZero, videoAssetTrack.timeRange.duration);
     if (videoAssetTrack) {
         AVMutableCompositionTrack *videoCompositionTrack = [composition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-        // 出入视频轨道
+        // 出入视频轨道 
         [videoCompositionTrack insertTimeRange:timeRange ofTrack:videoAssetTrack atTime:kCMTimeZero error:&error];
     }
+    
+    // 处理视频原音和需要加入的音频
+    AVMutableAudioMix *audioMix = [AVMutableAudioMix audioMix];
+    NSMutableArray<AVMutableAudioMixInputParameters *> *audioInputParamtersM = [NSMutableArray array];
+    
     if (audioAssetTrack) {
         AVMutableCompositionTrack *audioCompositionTrack = [composition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
         // 插入音频轨道
         [audioCompositionTrack insertTimeRange:timeRange ofTrack:audioAssetTrack atTime:kCMTimeZero error:&error];
+        
+        AVMutableAudioMixInputParameters *originalAudioInputParamters = [AVMutableAudioMixInputParameters audioMixInputParametersWithTrack:audioCompositionTrack];
+        // 设置音量
+        [originalAudioInputParamters setVolume:1.f atTime:kCMTimeZero];
+        [audioInputParamtersM addObject:originalAudioInputParamters];
     }
+    audioMix.inputParameters = audioInputParamtersM;
     
     // 添加水印
     AVMutableVideoComposition *videoComposition = [AVMutableVideoComposition videoComposition];
@@ -412,7 +423,7 @@
                                    presetName:nil
                                outputFileType:AVFileTypeMPEG4
                                     outputURL:outputFilePath
-                                     audioMix:nil
+                                     audioMix:audioMix
                              videoComposition:videoComposition
                             completionHandler:completionBlock];
 }
@@ -594,7 +605,6 @@
     
     [textLayer addAnimation:animationGroup forKey:@"breatheAnimation"];
     
-    [layer addSublayer:textLayer];
-    return layer;
+    return textLayer;
 }
 @end
